@@ -6,19 +6,27 @@ Curated collection of production-grade AI Agent Skills (`SKILL.md`) for **Claude
 
 ## ⚡️ Quick Installation (via Skill Nexus)
 
-Anyone can install any skill from this repository directly to their AI tools with a single command:
+Anyone can install skills from this repository directly into their AI tools:
+
+### Option A: Install ALL Skills (Batch Install)
+To install all 31 skills from this repository in a single command:
 
 ```bash
-# Format: sn install <username>/my-ai-skills/skills/<skill-name> --sync
-
-# Examples:
-sn install Peerawit-Y/my-ai-skills/skills/diagram-design --sync
-sn install Peerawit-Y/my-ai-skills/skills/impeccable --sync
-sn install Peerawit-Y/my-ai-skills/skills/accidental-data-loss-prevention --sync
-sn install Peerawit-Y/my-ai-skills/skills/bigquery-sql --sync
+sn install Peerawit-Y/my-ai-skills --sync
 ```
 
-To update all installed remote skills to the latest version in the future:
+### Option B: Install Specific Skills
+To install only the skills you need:
+
+```bash
+# Examples:
+sn install Peerawit-Y/my-ai-skills/diagram-design --sync
+sn install Peerawit-Y/my-ai-skills/impeccable --sync
+sn install Peerawit-Y/my-ai-skills/accidental-data-loss-prevention --sync
+sn install Peerawit-Y/my-ai-skills/bigquery-sql --sync
+```
+
+### Auto-Update All Skills in the Future
 ```bash
 sn update
 ```
@@ -88,18 +96,17 @@ Official Google Cloud Data & AI Agent Skills suite (`publisher: google`, Apache-
 ```text
 my-ai-skills/
 ├── README.md
-└── skills/
-    ├── accidental-data-loss-prevention/
-    │   └── SKILL.md
-    ├── diagram-design/
-    │   ├── SKILL.md
-    │   ├── assets/
-    │   ├── references/
-    │   └── scripts/
-    ├── impeccable/
-    │   └── SKILL.md
-    ├── bigquery-sql/
-    ├── ... (other 28 skills)
+├── diagram-design/
+│   ├── SKILL.md
+│   ├── assets/
+│   ├── references/
+│   └── scripts/
+├── impeccable/
+│   └── SKILL.md
+├── accidental-data-loss-prevention/
+│   └── SKILL.md
+├── bigquery-sql/
+└── ... (other 27 skills)
 ```
 
 ---
